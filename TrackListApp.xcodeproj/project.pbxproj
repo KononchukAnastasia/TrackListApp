@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		B5BC82DD2BD3CAD700291EB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC82DC2BD3CAD700291EB0 /* AppDelegate.swift */; };
 		B5BC82DF2BD3CAD700291EB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC82DE2BD3CAD700291EB0 /* SceneDelegate.swift */; };
-		B5BC82E12BD3CAD700291EB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC82E02BD3CAD700291EB0 /* ViewController.swift */; };
 		B5BC82E42BD3CAD700291EB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BC82E22BD3CAD700291EB0 /* Main.storyboard */; };
 		B5BC82E62BD3CADB00291EB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5BC82E52BD3CADB00291EB0 /* Assets.xcassets */; };
 		B5BC82E92BD3CADB00291EB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BC82E72BD3CADB00291EB0 /* LaunchScreen.storyboard */; };
+		B5F70ADB2BD3D3FF005754C6 /* TrackDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70ADA2BD3D3FF005754C6 /* TrackDetailsViewController.swift */; };
+		B5F70ADD2BD3D443005754C6 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70ADC2BD3D443005754C6 /* TrackCell.swift */; };
+		B5F70AE42BD3D5AA005754C6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70AE32BD3D5AA005754C6 /* API.swift */; };
+		B5F70AE62BD3D5F0005754C6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70AE52BD3D5F0005754C6 /* NetworkManager.swift */; };
+		B5F70AE92BD3D680005754C6 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70AE82BD3D680005754C6 /* Track.swift */; };
+		B5F70AEB2BD3DD01005754C6 /* TrackListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70AEA2BD3DD01005754C6 /* TrackListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5BC82D92BD3CAD700291EB0 /* TrackListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BC82DC2BD3CAD700291EB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5BC82DE2BD3CAD700291EB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5BC82E02BD3CAD700291EB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5BC82E32BD3CAD700291EB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5BC82E52BD3CADB00291EB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5BC82E82BD3CADB00291EB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5BC82EA2BD3CADB00291EB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F70ADA2BD3D3FF005754C6 /* TrackDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailsViewController.swift; sourceTree = "<group>"; };
+		B5F70ADC2BD3D443005754C6 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		B5F70AE32BD3D5AA005754C6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B5F70AE52BD3D5F0005754C6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B5F70AE82BD3D680005754C6 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		B5F70AEA2BD3DD01005754C6 /* TrackListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,68 @@
 		B5BC82DB2BD3CAD700291EB0 /* TrackListApp */ = {
 			isa = PBXGroup;
 			children = (
-				B5BC82DC2BD3CAD700291EB0 /* AppDelegate.swift */,
-				B5BC82DE2BD3CAD700291EB0 /* SceneDelegate.swift */,
-				B5BC82E02BD3CAD700291EB0 /* ViewController.swift */,
-				B5BC82E22BD3CAD700291EB0 /* Main.storyboard */,
-				B5BC82E52BD3CADB00291EB0 /* Assets.xcassets */,
-				B5BC82E72BD3CADB00291EB0 /* LaunchScreen.storyboard */,
-				B5BC82EA2BD3CADB00291EB0 /* Info.plist */,
+				B5F70AE72BD3D66C005754C6 /* Model */,
+				B5F70AE22BD3D593005754C6 /* Services */,
+				B5F70AE02BD3D4FF005754C6 /* ViewControllers */,
+				B5F70ADC2BD3D443005754C6 /* TrackCell.swift */,
+				B5F70ADE2BD3D4C0005754C6 /* Storyboards */,
+				B5F70AE12BD3D519005754C6 /* Supporting */,
+				B5F70ADF2BD3D4EA005754C6 /* Resources */,
 			);
 			path = TrackListApp;
+			sourceTree = "<group>";
+		};
+		B5F70ADE2BD3D4C0005754C6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B5BC82E22BD3CAD700291EB0 /* Main.storyboard */,
+				B5BC82E72BD3CADB00291EB0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B5F70ADF2BD3D4EA005754C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5BC82E52BD3CADB00291EB0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B5F70AE02BD3D4FF005754C6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5F70AEA2BD3DD01005754C6 /* TrackListViewController.swift */,
+				B5F70ADA2BD3D3FF005754C6 /* TrackDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B5F70AE12BD3D519005754C6 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				B5BC82DC2BD3CAD700291EB0 /* AppDelegate.swift */,
+				B5BC82DE2BD3CAD700291EB0 /* SceneDelegate.swift */,
+				B5BC82EA2BD3CADB00291EB0 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		B5F70AE22BD3D593005754C6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B5F70AE32BD3D5AA005754C6 /* API.swift */,
+				B5F70AE52BD3D5F0005754C6 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B5F70AE72BD3D66C005754C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5F70AE82BD3D680005754C6 /* Track.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5BC82E12BD3CAD700291EB0 /* ViewController.swift in Sources */,
+				B5F70AEB2BD3DD01005754C6 /* TrackListViewController.swift in Sources */,
 				B5BC82DD2BD3CAD700291EB0 /* AppDelegate.swift in Sources */,
 				B5BC82DF2BD3CAD700291EB0 /* SceneDelegate.swift in Sources */,
+				B5F70ADB2BD3D3FF005754C6 /* TrackDetailsViewController.swift in Sources */,
+				B5F70AE92BD3D680005754C6 /* Track.swift in Sources */,
+				B5F70AE62BD3D5F0005754C6 /* NetworkManager.swift in Sources */,
+				B5F70AE42BD3D5AA005754C6 /* API.swift in Sources */,
+				B5F70ADD2BD3D443005754C6 /* TrackCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +362,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3CCNFR9RJK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TrackListApp/Info.plist;
+				INFOPLIST_FILE = TrackListApp/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,7 +390,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3CCNFR9RJK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TrackListApp/Info.plist;
+				INFOPLIST_FILE = TrackListApp/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
