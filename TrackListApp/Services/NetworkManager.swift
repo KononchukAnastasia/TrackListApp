@@ -14,12 +14,13 @@ final class NetworkManager {
     
     // MARK: - Public Methods
     
-    func fetchTrack(url: String, term: String, completion: @escaping (_ track: TrackRequest) -> ()) {
+    func fetchTrack(url: String, term: String, completion: @escaping (Result<TrackRequest, Error>) -> ()) {
         guard let url = URL(string: url + term) else { return }
         
         URLSession.shared.dataTask(with: url) { data, _, error in
             if let error = error {
                 print(error.localizedDescription)
+                completion(.failure(error))
                 return
             }
             
@@ -29,10 +30,11 @@ final class NetworkManager {
                 let track = try JSONDecoder().decode(TrackRequest.self, from: data)
                 
                 DispatchQueue.main.async {
-                    completion(track)
+                    completion(.success(track))
                 }
             } catch {
                 print("JSON Decoding Error: \(error.localizedDescription)")
+                completion(.failure(error))
                 
             }
         }.resume()

@@ -18,6 +18,7 @@
 		B5F70AE62BD3D5F0005754C6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70AE52BD3D5F0005754C6 /* NetworkManager.swift */; };
 		B5F70AE92BD3D680005754C6 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70AE82BD3D680005754C6 /* Track.swift */; };
 		B5F70AEB2BD3DD01005754C6 /* TrackListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70AEA2BD3DD01005754C6 /* TrackListViewController.swift */; };
+		B5F70AEF2BE3DCE8005754C6 /* TrackListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70AEE2BE3DCE8005754C6 /* TrackListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		B5F70AE52BD3D5F0005754C6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B5F70AE82BD3D680005754C6 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		B5F70AEA2BD3DD01005754C6 /* TrackListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewController.swift; sourceTree = "<group>"; };
+		B5F70AEE2BE3DCE8005754C6 /* TrackListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		B5BC82DB2BD3CAD700291EB0 /* TrackListApp */ = {
 			isa = PBXGroup;
 			children = (
+				B5F70AED2BE3DCBB005754C6 /* ViewModels */,
 				B5F70AE72BD3D66C005754C6 /* Model */,
 				B5F70AE22BD3D593005754C6 /* Services */,
 				B5F70AE02BD3D4FF005754C6 /* ViewControllers */,
@@ -128,6 +131,14 @@
 				B5F70AE82BD3D680005754C6 /* Track.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B5F70AED2BE3DCBB005754C6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B5F70AEE2BE3DCE8005754C6 /* TrackListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F70AEF2BE3DCE8005754C6 /* TrackListViewModel.swift in Sources */,
 				B5F70AEB2BD3DD01005754C6 /* TrackListViewController.swift in Sources */,
 				B5BC82DD2BD3CAD700291EB0 /* AppDelegate.swift in Sources */,
 				B5BC82DF2BD3CAD700291EB0 /* SceneDelegate.swift in Sources */,
