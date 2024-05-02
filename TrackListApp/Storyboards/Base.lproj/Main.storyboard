@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="49L-4d-sPg">
-                                <rect key="frame" x="0.0" y="113" width="320" height="56"/>
+                                <rect key="frame" x="0.0" y="112.5" width="320" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="i1X-zC-ew5" id="diF-y1-vMU"/>
@@ -118,13 +118,39 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="JxR-0e-IjG">
                                 <rect key="frame" x="141.5" y="265.5" width="37" height="37"/>
                             </activityIndicatorView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mgQ-zG-CSr">
+                                <rect key="frame" x="16" y="473" width="288" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02R-Yg-CPb">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="34"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="playButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IOZ-fP-mK7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUg-DK-JO0">
+                                        <rect key="frame" x="152" y="0.0" width="136" height="34"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="pause.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="pauseButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D8X-Lv-oKi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="mgQ-zG-CSr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7CJ-cx-Zu2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tq4-Z6-MUB" secondAttribute="trailing" constant="16" id="7P5-q7-j45"/>
                             <constraint firstItem="7TX-Mu-fev" firstAttribute="top" secondItem="tq4-Z6-MUB" secondAttribute="bottom" constant="16" id="B0m-8v-1Qd"/>
                             <constraint firstItem="tq4-Z6-MUB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="C9d-i3-tAG"/>
+                            <constraint firstItem="mgQ-zG-CSr" firstAttribute="top" secondItem="7TX-Mu-fev" secondAttribute="bottom" constant="16" id="IdG-dK-SF5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mgQ-zG-CSr" secondAttribute="trailing" constant="16" id="K9V-Gw-p7S"/>
                             <constraint firstItem="tq4-Z6-MUB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="M50-ap-iVZ"/>
                             <constraint firstItem="JxR-0e-IjG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NkK-g8-8nA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7TX-Mu-fev" secondAttribute="trailing" constant="16" id="PYB-XK-u0l"/>
@@ -163,6 +189,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="pause.fill" catalog="system" width="117" height="128"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

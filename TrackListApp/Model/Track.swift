@@ -17,6 +17,7 @@ struct Track: Codable {
     let artistName: String?
     let trackName: String?
     let artworkUrl100: String?
+    let previewUrl: String?
     
     var title: String {
         "\(artistName ?? "") - \(trackName ?? "")"

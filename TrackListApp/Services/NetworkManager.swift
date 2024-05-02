@@ -54,4 +54,27 @@ final class NetworkManager {
                 }
             }.resume()
         }
+    
+    func fetchMusic(url: String, completion: @escaping (Result<Data, Error>) -> Void) {
+        guard let url = URL(string: url) else {
+            completion(.failure(NSError(domain: "Invalid URL", code: 0, userInfo: nil)))
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            
+            guard let data = data else {
+                completion(.failure(NSError(domain: "No data received", code: 0, userInfo: nil)))
+                return
+            }
+            
+            DispatchQueue.main.async {
+                completion(.success(data))
+            }
+        }.resume()
+    }
 }
