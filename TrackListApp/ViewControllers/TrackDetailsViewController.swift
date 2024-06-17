@@ -15,8 +15,7 @@ final class TrackDetailsViewController: UIViewController {
     
     var track: Track!
     
-    private var player: AVAudioPlayer?
-    private var pause = false
+    private var trackDetailsViewModel = TrackDetailsViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,22 +25,13 @@ final class TrackDetailsViewController: UIViewController {
     }
     
     @IBAction private func playButtonAction(_ sender: Any) {
-        if pause {
-            player?.play()
-            pause = false
+        if trackDetailsViewModel.isPlaying {
+            trackDetailsViewModel.player?.play()
         } else {
-            //start
-            NetworkManager.shared.fetchMusic(url: track.previewUrl ?? "") { [weak self] result in
-                //stop
+            trackDetailsViewModel.fetchMusic(from: track.previewUrl ?? "") { [weak self] result in
                 switch result {
-                case .success(let data):
-                    do {
-                        self?.player = try AVAudioPlayer(data: data)
-                        self?.player?.play()
-                    }
-                    catch {
-                        print("Error: \(error.localizedDescription)")
-                    }
+                case .success:
+                    self?.trackDetailsViewModel.player?.play()
                 case .failure(let error):
                     print("Error: \(error.localizedDescription)")
                 }
@@ -50,8 +40,8 @@ final class TrackDetailsViewController: UIViewController {
     }
     
     @IBAction private func pauseButtonAction(_ sender: Any) {
-            player?.pause()
-            pause = true
+        trackDetailsViewModel.player?.pause()
+        trackDetailsViewModel.isPlaying = true
     }
     
     private func setupUI() {

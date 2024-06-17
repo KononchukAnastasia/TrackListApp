@@ -19,6 +19,7 @@
 		B5F70AE92BD3D680005754C6 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70AE82BD3D680005754C6 /* Track.swift */; };
 		B5F70AEB2BD3DD01005754C6 /* TrackListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70AEA2BD3DD01005754C6 /* TrackListViewController.swift */; };
 		B5F70AEF2BE3DCE8005754C6 /* TrackListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70AEE2BE3DCE8005754C6 /* TrackListViewModel.swift */; };
+		B5F70AF12BE3F574005754C6 /* TrackDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70AF02BE3F574005754C6 /* TrackDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		B5F70AE82BD3D680005754C6 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		B5F70AEA2BD3DD01005754C6 /* TrackListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewController.swift; sourceTree = "<group>"; };
 		B5F70AEE2BE3DCE8005754C6 /* TrackListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewModel.swift; sourceTree = "<group>"; };
+		B5F70AF02BE3F574005754C6 /* TrackDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				B5F70AEE2BE3DCE8005754C6 /* TrackListViewModel.swift */,
+				B5F70AF02BE3F574005754C6 /* TrackDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5F70AEF2BE3DCE8005754C6 /* TrackListViewModel.swift in Sources */,
+				B5F70AF12BE3F574005754C6 /* TrackDetailsViewModel.swift in Sources */,
 				B5F70AEB2BD3DD01005754C6 /* TrackListViewController.swift in Sources */,
 				B5BC82DD2BD3CAD700291EB0 /* AppDelegate.swift in Sources */,
 				B5BC82DF2BD3CAD700291EB0 /* SceneDelegate.swift in Sources */,
